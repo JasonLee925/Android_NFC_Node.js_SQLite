@@ -1,0 +1,17 @@
+{
+  "name": "express-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ME",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "md5": "^2.2.1",
+    "sqlite3": "^4.0.6"
+  }
+}

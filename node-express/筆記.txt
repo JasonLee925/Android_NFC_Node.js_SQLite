@@ -1,0 +1,20 @@
+curl -d "name=test&email=test%40example.com&password='test123'" -X POST 127.0.0.1:8000/api/users 
+
+curl -d "name:'jason', email:'abc@tutor.com', password:'1234567'" -X POST 127.0.0.1:8000/api/users
+
+
+INSERT INTO user (name, email, password) VALUES (?,?,?)
+
+INSERT INTO cards ( uid,'+
+								' create_time,'+
+								' update_time,'+ 
+								' count,'+
+								' the_last_detected)'+
+								' VALUES (?,?,?,?,?)
+
+
+====
+curl -X POST 127.0.0.1:8000/nfc/uid -d uid="12345678"
+====
+
+:{"rows":[{"uid":"11111111","create_time":"2019-5-9 23:44:44","update_time":"2019-5-9 23:53:25","count":10,"is_last":1},{"uid":"00000000","create_time":"2019-5-9 23:53:29","update_time":"2019-5-10 00:30:36","count":8,"is_last":1},{"uid":"12345678","create_time":"2019-5-10 00:13:21","update_time":"2019-5-10 00:29:31","count":6,"is_last":1}]}}
